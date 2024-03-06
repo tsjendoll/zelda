@@ -1,4 +1,4 @@
-import pygame
+import pygame, sys
 from settings import *
 
 class Player(pygame.sprite.Sprite):
@@ -33,6 +33,9 @@ class Player(pygame.sprite.Sprite):
             self.facing = 'down'
         else:
             self.direction.y = 0
+
+        if keys[pygame.K_ESCAPE]:
+            sys.exit()
 
     def move(self, speed):
         if self.direction.magnitude() !=0:

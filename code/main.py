@@ -12,7 +12,7 @@ class Game:
 		self.clock = pygame.time.Clock()
 		
 		self.level = Level()
-
+		
 	def run(self):
 		while True:
 			for event in pygame.event.get():
@@ -27,4 +27,4 @@ class Game:
 
 if __name__ == '__main__':
 	game = Game()
-	game.run()	
+	game.run()
